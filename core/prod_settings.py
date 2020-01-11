@@ -3,7 +3,7 @@ from .settings import *
 DEBUG = False
 ALLOWED_HOSTS = ['http://whitejamer.pythonanywhere.com/']
 
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = os.getenv('SECRET_KEY', 'secretkey')
 
 DATABASES = {
     'default': {
