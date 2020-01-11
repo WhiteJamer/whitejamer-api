@@ -5,4 +5,4 @@ from .models import PortfolioItem
 class PortfolioSerializer(serializers.ModelSerializer):
     class Meta:
         model = PortfolioItem
-        fields = ('title', 'body', 'img', 'owner')
+        fields = ('title', 'sub_title', 'short_description', 'body', 'img', 'owner')
